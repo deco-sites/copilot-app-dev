@@ -1,0 +1,14 @@
+{
+  "name": "collections/blog/posts/296b007b98a5",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": [],
+    "extraProps": [],
+    "title": "Prompt do pedro",
+    "excerpt": "Isso é uma prompt",
+    "slug": "/fodase",
+    "content": "<p>balbalbalblablbal</p>",
+    "date": "2024-09-11"
+  }
+}

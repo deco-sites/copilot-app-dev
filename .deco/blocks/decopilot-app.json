@@ -1,0 +1,28 @@
+{
+  "__resolveType": "site/apps/local/decopilot-app.ts",
+  "provider": "anthropic",
+  "exampleProp": "dasdas",
+  "prompts": [
+    {}
+  ],
+  "content": [
+    {
+      "provider": "anthropic",
+      "agentName": "Test prompt",
+      "prompt": "Who are you?"
+    }
+  ],
+  "credentials": [
+    {
+      "key": {
+        "__resolveType": "website/loaders/secret.ts"
+      },
+      "provider": "anthropic",
+      "llmProvider": "openai"
+    },
+    {
+      "llmProvider": "Anthropic",
+      "key": {}
+    }
+  ]
+}
