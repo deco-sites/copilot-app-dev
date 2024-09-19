@@ -1,28 +1,74 @@
 {
   "__resolveType": "site/apps/local/decopilot-app.ts",
-  "provider": "anthropic",
-  "exampleProp": "dasdas",
-  "prompts": [
-    {}
+  "credentials": [
+    {
+      "llmProvider": "Anthropic",
+      "key": {
+        "__resolveType": "website/loaders/secret.ts",
+        "encrypted": "a661b30f25e55de4ccb80bf4ca85bfbf2f750d87e112d69c65843a81ef26ce93fd6838317b6b9b9959026e1f8a7d1b564a5339c8a7bdb9936cb026dcf027e0de4930d876601c816ac51241a677ef1ab18e81c161258024f15635c4f6f3b808b4ed9b93b8d8503c76638a502ca108c623",
+        "name": "AnthropicAPIKey"
+      }
+    }
   ],
   "content": [
     {
-      "provider": "anthropic",
-      "agentName": "Test prompt",
-      "prompt": "Who are you?"
-    }
-  ],
-  "credentials": [
-    {
-      "key": {
-        "__resolveType": "website/loaders/secret.ts"
+      "provider": "Anthropic",
+      "model": "claude-3-5-sonnet-20240620",
+      "advanced": {
+        "functions": [],
+        "restrictions": "After reflection output the briefest final answer in the format of\n<Answer>\n//Your answer here\n</Answer>"
       },
-      "provider": "anthropic",
-      "llmProvider": "openai"
+      "name": "Single Prompt Test",
+      "description": "Gives you the meaning of life in one prompt",
+      "prompt": "What is the meaning of life?"
     },
     {
-      "llmProvider": "Anthropic",
-      "key": {}
+      "provider": "Anthropic",
+      "model": "claude-3-5-sonnet-20240620",
+      "advanced": {
+        "functions": [],
+        "context": "Answer from input is defined between\n\n<Answer>\n// relevant information\n</Answer>"
+      },
+      "name": "Meaning of life extractor",
+      "description": "Extracts the meaning of life from a previous prompt",
+      "prompt": "Given the input, give the shortest available answer"
+    },
+    {
+      "provider": "Anthropic",
+      "model": "claude-3-5-sonnet-20240620",
+      "advanced": {
+        "functions": []
+      },
+      "name": "Page context summarized",
+      "description": "Summarizes context",
+      "prompt": "Summarize the following attachment"
+    },
+    {
+      "provider": "Anthropic",
+      "model": "claude-3-haiku-20240307",
+      "advanced": {
+        "functions": [],
+        "restrictions": "Do not explain the fields, explain what's contained in them and how the different entries relate to each other"
+      },
+      "name": "json explainer",
+      "description": "Explains a json file",
+      "prompt": "Below is attached a .json file.\nSummarize the information contained in it"
+    }
+  ],
+  "chains": [
+    {
+      "chainType": "Simple",
+      "blockNames": [
+        {
+          "blockNames": "Single Prompt Test",
+          "blockType": "Prompt"
+        },
+        {
+          "blockNames": "Meaning of life extractor",
+          "blockType": "Prompt"
+        }
+      ],
+      "name": "cadeia"
     }
   ]
 }
