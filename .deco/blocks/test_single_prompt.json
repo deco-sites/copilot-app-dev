@@ -1,0 +1,12 @@
+{
+  "__resolveType": "decopilot-app/actions/prompt/runPrompt.ts",
+  "attachments": [
+    {
+      "type": "URL",
+      "fileType": ".json",
+      "call_text": "This file contains the names of 2 people, extract it",
+      "fileUrl": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/copilot-app-dev/aa9494ad-1179-42cb-9050-6002f4e65633/present.json"
+    }
+  ],
+  "name": "json explainer"
+}

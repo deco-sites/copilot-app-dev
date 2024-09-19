@@ -1,0 +1,10 @@
+{
+  "__resolveType": "decopilot-app/actions/chain/runChain.ts",
+  "attachments": [
+    {
+      "type": "TextOnly",
+      "call_text": "Consider answer from Hitchiker's Guide to the Galaxy"
+    }
+  ],
+  "name": "cadeia"
+}
