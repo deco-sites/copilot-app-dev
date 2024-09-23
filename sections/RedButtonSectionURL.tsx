@@ -13,10 +13,12 @@ export default function PressMe({
 
   return (
     <div>
-      <h1 class="text-xl font-bold mb-4">{title}</h1>
+      <div class="mb-8"></div>
+      <h4 class="text-xl font-bold mb-4 text-center">{title}</h4>
       <div class="flex items-center justify-center">
         <SimplePromptURLButton />
       </div>
+      <div class="mb-8"></div>
     </div>
   );
 }

@@ -3,7 +3,8 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-import * as $SimplePromptInlineButtom from "./islands/SimplePromptInlineButtom.tsx";
+import * as $SimplePromptInlineButton from "./islands/SimplePromptInlineButton.tsx";
+import * as $SimplePromptInlineButtonTool from "./islands/SimplePromptInlineButtonTool.tsx";
 import * as $SimplePromptTextButton from "./islands/SimplePromptTextButton.tsx";
 import * as $SimplePromptURLButton from "./islands/SimplePromptURLButton.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -13,7 +14,8 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
-    "./islands/SimplePromptInlineButtom.tsx": $SimplePromptInlineButtom,
+    "./islands/SimplePromptInlineButton.tsx": $SimplePromptInlineButton,
+    "./islands/SimplePromptInlineButtonTool.tsx": $SimplePromptInlineButtonTool,
     "./islands/SimplePromptTextButton.tsx": $SimplePromptTextButton,
     "./islands/SimplePromptURLButton.tsx": $SimplePromptURLButton,
   },

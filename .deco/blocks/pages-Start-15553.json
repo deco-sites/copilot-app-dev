@@ -3,9 +3,12 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/ItWorks.tsx",
-      "name": "<p>It Works!</p>",
-      "count": 1
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "<p>The wonderful test of decopilot-app</p>",
+        "description": "Showcase of a Typescript journey"
+      }
     },
     {
       "__resolveType": "Footer"
@@ -27,6 +30,12 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/RedButtonSectionInline.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/RedButtonSectionInlineFunction.tsx"
       }
     }
   ],

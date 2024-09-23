@@ -16,7 +16,8 @@
       "model": "claude-3-5-sonnet-20240620",
       "advanced": {
         "functions": [],
-        "restrictions": "After reflection output the briefest final answer in the format of\n<Answer>\n//Your answer here\n</Answer>"
+        "restrictions": "After reflection output the briefest final answer in the format of\n<Answer>\n//Your answer here\n</Answer>",
+        "availableFunctions": []
       },
       "name": "Single Prompt Test",
       "description": "Gives you the meaning of life in one prompt",
@@ -27,7 +28,8 @@
       "model": "claude-3-5-sonnet-20240620",
       "advanced": {
         "functions": [],
-        "context": "Answer from input is defined between\n\n<Answer>\n// relevant information\n</Answer>"
+        "context": "Answer from input is defined between\n\n<Answer>\n// relevant information\n</Answer>",
+        "availableFunctions": []
       },
       "name": "Meaning of life extractor",
       "description": "Extracts the meaning of life from a previous prompt",
@@ -37,7 +39,8 @@
       "provider": "Anthropic",
       "model": "claude-3-5-sonnet-20240620",
       "advanced": {
-        "functions": []
+        "functions": [],
+        "availableFunctions": []
       },
       "name": "Page context summarized",
       "description": "Summarizes context",
@@ -48,7 +51,8 @@
       "model": "claude-3-haiku-20240307",
       "advanced": {
         "functions": [],
-        "restrictions": "Do not explain the fields, explain what's contained in them and how the different entries relate to each other"
+        "restrictions": "Do not explain the fields, explain what's contained in them and how the different entries relate to each other",
+        "availableFunctions": []
       },
       "name": "json explainer",
       "description": "Explains a json file",

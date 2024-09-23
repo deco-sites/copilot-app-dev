@@ -1,0 +1,10 @@
+{
+  "__resolveType": "decopilot-app/actions/prompt/runSavedPrompts.ts",
+  "attachments": [
+    {
+      "type": "TextOnly",
+      "call_text": "Use HItchiker's guide to the galaxy"
+    }
+  ],
+  "called_prompt": "Meaning of life extractor"
+}

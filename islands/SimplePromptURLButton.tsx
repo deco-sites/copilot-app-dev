@@ -9,7 +9,7 @@ export default function SimplePromptURLButton() {
                     window.alert(
                         JSON.stringify(await invoke["decopilot-app"].actions.prompt.runPrompt(
                             {
-                                called_prompt: "json explainer",
+                                promptName: "json explainer",
                                 attachments: [{
                                     call_text: "This json file contains two people and their favorite foods",
                                     fileUrl: "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/copilot-app-dev/5af57aaf-a17e-4d03-bdca-0cb0edce1a6c/favorite_food.json",

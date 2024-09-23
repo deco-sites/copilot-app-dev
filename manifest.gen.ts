@@ -6,23 +6,31 @@ import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/local/decopilot-app.ts";
 import * as $$$$$$$$$$$3 from "./apps/site.ts";
-import * as $$$$$$6 from "./sections/demoSection.tsx";
+import * as $$$0 from "./loaders/toolCalingTest.ts";
+import * as $$$$$$8 from "./sections/demoSection.tsx";
 import * as $$$$$$0 from "./sections/Footer.tsx";
-import * as $$$$$$1 from "./sections/ItWorks.tsx";
-import * as $$$$$$2 from "./sections/RedButtonSection.tsx";
-import * as $$$$$$3 from "./sections/RedButtonSectionInline.tsx";
-import * as $$$$$$4 from "./sections/RedButtonSectionURL.tsx";
-import * as $$$$$$5 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$1 from "./sections/Hero.tsx";
+import * as $$$$$$2 from "./sections/ItWorks.tsx";
+import * as $$$$$$3 from "./sections/RedButtonSection.tsx";
+import * as $$$$$$4 from "./sections/RedButtonSectionInline.tsx";
+import * as $$$$$$5 from "./sections/RedButtonSectionInlineFunction.tsx";
+import * as $$$$$$6 from "./sections/RedButtonSectionURL.tsx";
+import * as $$$$$$7 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/toolCalingTest.ts": $$$0,
+  },
   "sections": {
-    "site/sections/demoSection.tsx": $$$$$$6,
+    "site/sections/demoSection.tsx": $$$$$$8,
     "site/sections/Footer.tsx": $$$$$$0,
-    "site/sections/ItWorks.tsx": $$$$$$1,
-    "site/sections/RedButtonSection.tsx": $$$$$$2,
-    "site/sections/RedButtonSectionInline.tsx": $$$$$$3,
-    "site/sections/RedButtonSectionURL.tsx": $$$$$$4,
-    "site/sections/Theme/Theme.tsx": $$$$$$5,
+    "site/sections/Hero.tsx": $$$$$$1,
+    "site/sections/ItWorks.tsx": $$$$$$2,
+    "site/sections/RedButtonSection.tsx": $$$$$$3,
+    "site/sections/RedButtonSectionInline.tsx": $$$$$$4,
+    "site/sections/RedButtonSectionInlineFunction.tsx": $$$$$$5,
+    "site/sections/RedButtonSectionURL.tsx": $$$$$$6,
+    "site/sections/Theme/Theme.tsx": $$$$$$7,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
